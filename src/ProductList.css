@@ -105,10 +105,13 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
+    border-radius: 10px;
+    transition: padding 0.3s ease-in-out;
 }
 
 .product-button:hover {
     background-color: #c0392b;
+    padding : 20px 30px;
 }
 
 /* Pseudo-elements - Sale badge */
