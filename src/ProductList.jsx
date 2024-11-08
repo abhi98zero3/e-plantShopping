@@ -287,7 +287,7 @@ const handlePlantsClick = (e) => {
                     <div className='product-list'>
                         {item.plants.map((plant, plantIdx) => (
                             <div className='product-card' key={plantIdx}>
-                                <img src={plant.image} alt={plant.name} />
+                                <img className='product-image' src={plant.image} alt={plant.name} />
                                 <div className='product-title'>{plant.name}</div>
                                 <div>{plant.description}</div>
                                 <div><h4>Cost : {plant.cost}</h4></div>
