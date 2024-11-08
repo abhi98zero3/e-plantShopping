@@ -38,8 +38,8 @@
 
 .landing_content {
  margin-top: 430px;
-  margin-left: 100px;
-  transform: translate(-50%, -50%);
+  margin-left: 150px;
+  transform: translate(-25%, -50%);
   z-index: 1;
   text-align: center;
   /* background-color: red; */
@@ -83,10 +83,12 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 40px;
+  transition : padding 0.3s ease;
 }
 
 .get-started-button:hover {
   background-color: #45a049;
+  padding : 20px 30px;
 }
 
 /* ProductList.css */
