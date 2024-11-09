@@ -4,7 +4,7 @@ import CartItem from './CartItem';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from './CartSlice';
 
-function ProductList() {
+function ProductList({onBannerClick}) {
     const [showCart, setShowCart] = useState(false); 
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
     const [addedToCart, setAddedToCart] = useState({});
@@ -250,6 +250,7 @@ function ProductList() {
     setShowCart(false); // Hide the cart when navigating to About Us
   };
 
+
   const handleContinueShopping = (e) => {
     e.preventDefault();
     setShowCart(false);
@@ -278,7 +279,7 @@ function ProductList() {
             <div className="tag">
                <div className="luxury">
                <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
-               <a href="/" style={{textDecoration:'none'}}>
+               <a href="#" onClick={(e) => onBannerClick(e)} style={{textDecoration:'none'}}>
                         <div>
                     <h3 style={{color:'white'}}>Paradise Nursery</h3>
                     <i style={{color:'white'}}>Where Green Meets Serenity</i>
