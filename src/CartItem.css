@@ -239,5 +239,9 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 40px;
+    transition : padding 0.3s ease;
+  }
+  .get-started-button1:hover {
+    padding : 20px 80px;
   }
   

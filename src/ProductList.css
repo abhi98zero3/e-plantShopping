@@ -47,6 +47,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+.productClass{
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom : 2px solid black;
+}
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -105,10 +110,25 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     margin-top: 10px;
+    border-radius: 10px;
+    transition: padding 0.3s ease-in-out;
 }
 
 .product-button:hover {
     background-color: #c0392b;
+    padding : 20px 30px;
+}
+
+.product-button:disabled {
+    background-color: darkgray;
+    transition: padding 0s ease;
+    padding : 10px 15px;
+    
+}
+
+.product-button:disabled:hover {
+    background-color: darkgray;
+    padding : 10px 15px;
 }
 
 /* Pseudo-elements - Sale badge */
